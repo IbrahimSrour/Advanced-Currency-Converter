@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.lau.currency_converter">
+    package="com.lau.currency_converter" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -18,7 +18,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CurrencyConverter">
+        android:theme="@style/Theme.CurrencyConverter" >
+        <activity
+            android:name=".Page2"
+            android:exported="false" />
         <activity
             android:name=".MainActivity2"
             android:banner="@drawable/app_icon_your_company"
@@ -26,7 +29,7 @@
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_main2"
             android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,7 +47,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

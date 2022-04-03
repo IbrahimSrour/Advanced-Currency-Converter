@@ -2,23 +2,21 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="false"
+    tools:context=".Page2">
 
-    tools:context=".MainActivity2">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/USD"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:text="USD"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
-        app:srcCompat="@drawable/lira_usd" />
+        app:layout_constraintStart_toEndOf="@+id/fromCurrency"
+        tools:layout_editor_absoluteY="257dp" />
 
     <Button
         android:id="@+id/btnConvert"
@@ -57,22 +55,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fromCurrency" />
 
-    <Spinner
-        android:id="@+id/fromSpinner"
-        android:layout_width="145dp"
-        android:layout_height="38dp"
+    <TextView
+        android:id="@+id/LBP"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:text="LBP"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/fromCurrency"
         tools:layout_editor_absoluteY="164dp" />
-
-    <Spinner
-        android:id="@+id/toSpinner"
-        android:layout_width="145dp"
-        android:layout_height="38dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toEndOf="@+id/toCurrency"
-        tools:layout_editor_absoluteY="265dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
