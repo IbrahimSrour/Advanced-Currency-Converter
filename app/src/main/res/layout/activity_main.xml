@@ -30,6 +30,7 @@
         android:id="@+id/changePageButton"
         android:layout_width="378dp"
         android:layout_height="187dp"
+        android:onClick="goToPage2"
         android:text="Go Calculate"
         android:textSize="40sp"
         tools:layout_editor_absoluteX="12dp"
