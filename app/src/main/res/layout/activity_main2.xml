@@ -24,7 +24,7 @@
         android:id="@+id/btnConvert"
         android:layout_width="400dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginBottom="232dp"
         android:text="Convert"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
